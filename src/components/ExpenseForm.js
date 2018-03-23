@@ -43,6 +43,7 @@ export default class ExpenseForm extends React.Component {
     }
 
     onDateChange = (createdAt) => {
+        console.log('On data change');
         if(createdAt){
             this.setState(() => ({ createdAt }));
         }
